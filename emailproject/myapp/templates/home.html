@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Email</title>
+  </head>
+  <body align="center">
+    <form action="{% url 'home' %}" method="post">
+    {% csrf_token %}
+    To: <input type="text" name="to"> <br><br>
+    Subject: <input type="text" name="subject"><br><br>
+    Body: <input type="text" name="body" > <br><br>
+    <input type="submit" value="submit" >
+
+  </form>
+  </body>
+</html>
